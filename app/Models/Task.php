@@ -13,6 +13,8 @@ class Task extends Model
     protected $fillable = ['title', 'description', 'status'];
 
     protected $casts = [
-        'status' => TaskStatus::class
+        'status' => TaskStatus::class,
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime'
     ];
 }
